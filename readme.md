@@ -1,4 +1,4 @@
-Credit where due:
+Credit:
 
 https://pages.github.com/
 
