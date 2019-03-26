@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sea Turtles</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h4 style="font-weight: bold">Sea Turtles</h4>
+    <img class="turtle-icon" src="turtle_icon_transparent.png"></img>
+    <a href="index.html">Home</a><img class="turtle-icon" src="turtle_icon_transparent.png"></img>
+    <a href="m_and_r.html">Mating and Reproduction</a><img class="turtle-icon" src="turtle_icon_transparent.png"></img>
+    <a href="habitat.html">Habitat</a><img class="turtle-icon" src="turtle_icon_transparent.png"></img>
+    <a class="thick" href="image_gal.html">Image Gallery</a><img class="turtle-icon" src="turtle_icon_transparent.png"></img>
+  <hr>
+  <div class="row">
+  <div class="column">
+    <img src="1.jpg" onclick="myFunction(this);" height="110" width="140">
+  </div>
+  <div class="column">
+    <img src="2.jpg" onclick="myFunction(this);" height="110" width="140">
+  </div>
+  <div class="column">
+    <img src="3.jpg" onclick="myFunction(this);" height="110" width="140">
+  </div>
+  <div class="column">
+    <img src="4.jpg" onclick="myFunction(this);" height="110" width="140">
+  </div>
+  <div class="column">
+    <img src="5.jpg" onclick="myFunction(this);" height="110" width="140">
+  </div>
+  <div class="column">
+      <img src="ChillSeaTurtlePic.jpg" onclick="myFunction(this);" height="110" width="140">
+  </div>
+  <div class="column">
+      <img src="habitats.png" onclick="myFunction(this);" height="110" width="140">
+  </div>
+  <div class="column">
+      <img src="TurtleJuniorPic.jpg" onclick="myFunction(this);" height="110" width="140">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container" style="height: 100%">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img style="display: block; margin-left: auto; margin-right: auto;" id="expandedImg" height="400" width="550">
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+<script type="text/javascript">
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+</script>
+</body>
+</html>
