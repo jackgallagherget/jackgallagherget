@@ -1,5 +1,7 @@
 Credit:
 
+http://seaturtlesarecool.com
+
 https://pages.github.com/
 
 https://matthewkudija.com/GitHub-Pages-Example/
