@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+main {
+
+}
+
 .turtle-icon{
   height: 25px;
   width: 25px;
@@ -10,8 +14,9 @@ a.thick {
 }
 
  html, body {
- margin: 0px;
- padding: 0px;
+ max-width: 38rem;
+ padding: 2rem;
+ margin: auto;
  border: 0px;
  color: #000;
 
